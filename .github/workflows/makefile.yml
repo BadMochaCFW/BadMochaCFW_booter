@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Get devkitppc
-      run: sudo dkp-pacman -S wiiu-dev
+      run: sudo dkp-pacman -S devkitPPC
       
     - name: Build
       run: make
