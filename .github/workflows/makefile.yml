@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Get devkitppc
-      run: sudo dkp-pacman -S devkitPPC -y
+      run: sudo dkp-pacman -S devkitPPC --noconfirm
       
     - name: Build
       run: make
