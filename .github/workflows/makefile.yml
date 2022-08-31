@@ -19,5 +19,5 @@ jobs:
       run: sudo dkp-pacman -S devkitPPC --noconfirm && export DEVKITPPC=$devkitARM../devkitPPC
       
     - name: Build
-      run: make
+      run: env
       
