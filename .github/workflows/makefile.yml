@@ -19,5 +19,5 @@ jobs:
       run: sudo apt-get update && sudo apt-get -y install xxd gcc-10-powerpc-linux-gnu gcc-powerpc-linux-gnu make gcc flex binutils bison libssl-dev
       
     - name: Build
-      run: export DEVKITPPC=$devkitARM../devkitPPC && make
+      run: export DEVKITPPC=/usr/ && make
       
