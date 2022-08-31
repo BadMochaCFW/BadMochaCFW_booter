@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Get devkitppc
-      run: sudo apt-get update && sudo dkp-pacman -S devkitPPC --noconfirm && sudo apt-get -y install xxd
+      run: sudo apt-get update && sudo apt-get -y install xxd gcc-10-powerpc-linux-gnu gcc-powerpc-linux-gnu make gcc flex binutils bison libssl-dev
       
     - name: Build
       run: export DEVKITPPC=$devkitARM../devkitPPC && make
